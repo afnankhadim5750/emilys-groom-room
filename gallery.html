@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Emily's Groom Room, Taunton</title>
+  <meta name="description" content="A glimpse inside Emily's Groom Room, Taunton — the serene salon, spa rituals and freshly groomed companions.">
+  <meta property="og:title" content="Gallery — Emily's Groom Room, Taunton">
+  <meta property="og:description" content="The serene salon, spa rituals and freshly groomed companions of Emily's Groom Room.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/groomed-portrait.webp">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <i class="bi bi-flower1"></i>
+      <span class="brand-name">Emily's <em>Groom Room</em></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="bi bi-list" aria-hidden="true"></i></button>
+    <a class="nav-call" href="tel:+447908073653"><i class="bi bi-telephone"></i> 07908 073653</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <span class="eyebrow">The Groom Room in Pictures</span>
+    <h1>A Gallery of <span class="gold-it">Quiet Luxury</span></h1>
+    <div class="gold-rule" aria-hidden="true"></div>
+    <p class="lede">Spa rituals, serene interiors and companions leaving at their very finest.</p>
+  </section>
+
+  <section class="section" style="padding-top: 2.5rem;">
+    <div class="g-grid">
+      <figure class="g-item">
+        <div class="inner">
+          <img src="images/hero-spa-poodle.webp" alt="White poodle wrapped in a cream towel enjoying a spa treatment">
+        </div>
+        <figcaption>
+          <span class="t">The Spa Ritual</span>
+          <span class="s">Towel-Wrapped Tranquillity</span>
+        </figcaption>
+      </figure>
+      <figure class="g-item">
+        <div class="inner">
+          <img src="images/groomed-portrait.webp" alt="Freshly groomed cocker spaniel wearing a silk bow">
+        </div>
+        <figcaption>
+          <span class="t">Fresh From the Chair</span>
+          <span class="s">Breed-Standard Finish</span>
+        </figcaption>
+      </figure>
+      <figure class="g-item">
+        <div class="inner">
+          <img src="images/salon-interior.webp" alt="Ivory and gold salon interior with elegant grooming table">
+        </div>
+        <figcaption>
+          <span class="t">The Sanctuary</span>
+          <span class="s">Calm by Design</span>
+        </figcaption>
+      </figure>
+      <figure class="g-item">
+        <div class="inner">
+          <img src="images/bubble-bath.webp" alt="Fluffy white dog enjoying a luxurious bubble bath with rose petals">
+        </div>
+        <figcaption>
+          <span class="t">Bath Time, Elevated</span>
+          <span class="s">The Deep-Cleanse Ritual</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <span class="eyebrow">See It in Person</span>
+    <h2>Your Dog, Framed in Gold</h2>
+    <div class="gold-rule" aria-hidden="true"></div>
+    <p>Pictures only go so far — book an appointment and see the Groom Room's calm for yourself.</p>
+    <div class="hero-cta">
+      <a class="btn btn-solid" href="tel:+447908073653">Call 07908 073653</a>
+      <a class="btn btn-ghost" href="contact.html">Send an Enquiry</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h4><i class="bi bi-flower1"></i> Emily's Groom Room</h4>
+      <p>Luxury dog grooming &amp; spa in Taunton, South Somerset. Rated 4.8 stars · top-3 groomer in South Somerset.</p>
+      <span class="concept-badge">Website concept — design preview</span>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <ul>
+        <li>19 Musgrove Road, Taunton</li>
+        <li>South Somerset TA1 5LB</li>
+        <li><a href="tel:+447908073653">07908 073653</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul>
+        <li>Tue–Sat: 8:30am–5pm</li>
+        <li>Mon &amp; Sun: Closed</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Emily's Groom Room · Taunton, UK</span>
+    <span>Design concept — preview only</span>
+  </div>
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var btn = document.querySelector('.nav-toggle');
+  var panel = document.querySelector('.topbar-inner nav');
+  if (btn && panel) {
+    btn.addEventListener('click', function () {
+      var open = panel.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    panel.addEventListener('click', function (e) {
+      if (e.target.closest('a')) {
+        panel.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

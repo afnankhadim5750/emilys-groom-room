@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Booking — Emily's Groom Room, Taunton</title>
+  <meta name="description" content="Book your dog's appointment at Emily's Groom Room, 19 Musgrove Road, Taunton TA1 5LB. Call 07908 073653. Open Tue–Sat 8:30am–5pm; closed Mon & Sun.">
+  <meta property="og:title" content="Contact &amp; Booking — Emily's Groom Room, Taunton">
+  <meta property="og:description" content="19 Musgrove Road, Taunton TA1 5LB · Call 07908 073653 · Tue–Sat 8:30am–5pm.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/salon-interior.webp">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <i class="bi bi-flower1"></i>
+      <span class="brand-name">Emily's <em>Groom Room</em></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="bi bi-list" aria-hidden="true"></i></button>
+    <a class="nav-call" href="tel:+447908073653"><i class="bi bi-telephone"></i> 07908 073653</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <span class="eyebrow">We'd Love to Hear From You</span>
+    <h1>Book Your <span class="gold-it">Appointment</span></h1>
+    <div class="gold-rule" aria-hidden="true"></div>
+    <p class="lede">Call, or send an enquiry below — Emily will reply with availability and a tailored quote for your dog.</p>
+  </section>
+
+  <section class="section" style="padding-top: 2.5rem;">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Find Us</h3>
+        <div class="gold-rule" aria-hidden="true"></div>
+        <div class="contact-line">
+          <i class="bi bi-geo-alt" aria-hidden="true"></i>
+          <div>
+            <span class="lbl">Address</span>
+            <span class="val">19 Musgrove Road, Taunton,<br>South Somerset TA1 5LB</span>
+          </div>
+        </div>
+        <div class="contact-line">
+          <i class="bi bi-telephone" aria-hidden="true"></i>
+          <div>
+            <span class="lbl">Phone</span>
+            <a class="val" href="tel:+447908073653">07908 073653</a>
+          </div>
+        </div>
+        <div class="contact-line">
+          <i class="bi bi-envelope" aria-hidden="true"></i>
+          <div>
+            <span class="lbl">Email</span>
+            <a class="val" href="mailto:emilysgroomroom@hotmail.com">emilysgroomroom@hotmail.com</a>
+          </div>
+        </div>
+        <div class="contact-line">
+          <i class="bi bi-star" aria-hidden="true"></i>
+          <div>
+            <span class="lbl">Reputation</span>
+            <span class="val">Rated 4.8 · Top-3 groomer in South Somerset · 725 reviews listed under "Grooms by Emily"</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>Opening Hours</h3>
+        <div class="gold-rule" aria-hidden="true"></div>
+        <table class="hours-table">
+          <tbody>
+            <tr><th>Monday</th><td class="closed">Closed</td></tr>
+            <tr><th>Tuesday</th><td>8:30am – 5:00pm</td></tr>
+            <tr><th>Wednesday</th><td>8:30am – 5:00pm</td></tr>
+            <tr><th>Thursday</th><td>8:30am – 5:00pm</td></tr>
+            <tr><th>Friday</th><td>8:30am – 5:00pm</td></tr>
+            <tr><th>Saturday</th><td>8:30am – 5:00pm</td></tr>
+            <tr><th>Sunday</th><td class="closed">Closed</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="contact-card enquiry">
+      <h3>Send an Enquiry</h3>
+      <div class="gold-rule" aria-hidden="true"></div>
+      <form action="mailto:emilysgroomroom@hotmail.com" method="post" enctype="text/plain">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required placeholder="Jane Smith">
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="07xxx xxxxxx">
+          </div>
+          <div class="field">
+            <label for="dog">Dog's name &amp; breed</label>
+            <input type="text" id="dog" name="dog" placeholder="Biscuit · Cocker Spaniel">
+          </div>
+          <div class="field">
+            <label for="service">Treatment</label>
+            <select id="service" name="service">
+              <option>The Full Groom</option>
+              <option>Bath, Brush &amp; Blow-Dry</option>
+              <option>Puppy Introduction Groom</option>
+              <option>The De-Shedding Spa</option>
+              <option>Blueberry Facial</option>
+              <option>The Pawdicure</option>
+              <option>The Full Spa Day</option>
+              <option>Not sure — please advise</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your dog — coat type, temperament, anything we should know…"></textarea>
+          </div>
+        </div>
+        <div class="hero-cta" style="margin-top: 1.8rem;">
+          <button type="submit" class="btn btn-solid" style="cursor:pointer;">Send Enquiry</button>
+        </div>
+        <p class="form-note">Your enquiry opens in your email app, addressed to emilysgroomroom@hotmail.com.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h4><i class="bi bi-flower1"></i> Emily's Groom Room</h4>
+      <p>Luxury dog grooming &amp; spa in Taunton, South Somerset. Rated 4.8 stars · top-3 groomer in South Somerset.</p>
+      <span class="concept-badge">Website concept — design preview</span>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <ul>
+        <li>19 Musgrove Road, Taunton</li>
+        <li>South Somerset TA1 5LB</li>
+        <li><a href="tel:+447908073653">07908 073653</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul>
+        <li>Tue–Sat: 8:30am–5pm</li>
+        <li>Mon &amp; Sun: Closed</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Emily's Groom Room · Taunton, UK</span>
+    <span>Design concept — preview only</span>
+  </div>
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var btn = document.querySelector('.nav-toggle');
+  var panel = document.querySelector('.topbar-inner nav');
+  if (btn && panel) {
+    btn.addEventListener('click', function () {
+      var open = panel.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    panel.addEventListener('click', function (e) {
+      if (e.target.closest('a')) {
+        panel.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>
