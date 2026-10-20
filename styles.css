@@ -357,6 +357,26 @@ footer { background: var(--brown); color: #D8C6AE; }
   font-size: 0.78rem; color: #A68E70;
 }
 
+/* ---------- Homepage enrichment (highlights / FAQ / visit) ---------- */
+img[width] { height: auto; }
+.highlights-row { grid-template-columns: repeat(4, 1fr); }
+.fact-card .bi { font-size: 1.6rem; }
+.faq-list { max-width: 820px; margin: 0 auto; display: grid; gap: 1rem; }
+.faq-item {
+  background: var(--white); border: 2px dashed var(--terra);
+  border-radius: 22px; padding: 1.3rem 1.6rem; text-align: left;
+}
+.faq-item summary { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; color: var(--brown); cursor: pointer; }
+.faq-item p { color: var(--brown-soft); font-size: 0.96rem; margin-top: 0.6rem; }
+.visit-band { max-width: 820px; margin: 0 auto; }
+.gallery-preview { margin-bottom: 2rem; }
+@media (max-width: 900px) {
+  .highlights-row { grid-template-columns: 1fr 1fr; max-width: 640px; }
+}
+@media (max-width: 560px) {
+  .highlights-row { grid-template-columns: 1fr; }
+}
+
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
   .hero .lede-row { grid-template-columns: 1fr; gap: 1.4rem; }
@@ -416,3 +436,7 @@ body{ overflow-x:hidden; }
   .contact-card{ padding:1.8rem 1.4rem; }
   .nav-call{ display:none; }
 }
+
+/* Diversification: first-visit guide (replaces highlights row + FAQ) */
+.first-visit-grid{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.first-visit-grid{grid-template-columns:1fr;max-width:460px;margin:0 auto}}
